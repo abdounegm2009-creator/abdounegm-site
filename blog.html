@@ -168,7 +168,7 @@
 
   async function loadPosts(){
     try{
-      const res = await fetch('posts.json');
+      const res = await fetch('posts.json' + '?t=' + Date.now());
       allPosts = await res.json();
       allPosts.sort((a,b) => new Date(b.date) - new Date(a.date));
       renderFilters();
