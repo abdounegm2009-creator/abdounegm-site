@@ -1,244 +1,26 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المدونة | فضيلة الشيخ عبده نجيم</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --parchment:#F1E7CE;
-    --parchment-deep:#E8D9B8;
-    --ink:#231B12;
-    --emerald:#0E3B2E;
-    --emerald-deep:#092A20;
-    --gold:#C69A3E;
-    --gold-light:#E8C878;
-    --maroon:#6B1F26;
+[
+  {
+    "id": "lion",
+    "title": "الأسد في المنام",
+    "category": "الحيوانات",
+    "excerpt": "الأسد في الرؤيا يدل على السلطان والقوة، وتفسيره يختلف حسب حال الرائي ومكانته.",
+    "content": "الأسد في المنام يرمز إلى السلطان القوي، أو الرجل ذو الهيبة والمكانة، وقد يدل على العدو القوي بحسب موقف الرؤيا.\n\nفمن رأى أنه ملك أسداً أو ركبه، دل ذلك على نيل عز وسلطان بقدر ما ناله من الأسد. ومن رأى أسداً يطارده، فقد يدل على مواجهة خصم قوي أو خوف من صاحب سلطة.\n\nأما من رأى أنه قتل أسداً، فذلك يدل على غلبته لعدو قوي أو ظفره بأمر كان يخشاه.\n\nملحوظة مهمة: لا يُفسَّر الرمز نهائياً دون معرفة حال الرائي الاجتماعية ومكانته، لأن هذا يغيّر نطاق التفسير من شخصي إلى عام.",
+    "date": "2026-08-01"
+  },
+  {
+    "id": "snake",
+    "title": "الحية في المنام",
+    "category": "الحيوانات",
+    "excerpt": "الحية من أكثر الرموز التي يختلف تفسيرها باختلاف حال الرائي، فقد تدل على عدو خفي أو على مال.",
+    "content": "الحية في المنام تدل غالباً على عدو مستتر لا يُعرف من أول وهلة، وقد تدل أيضاً على المال أو الحياة بحسب سياق الرؤيا.\n\nفمن رأى حية تدخل بيته، فقد يدل ذلك على دخول شخص ذي نية غير حسنة إلى محيطه القريب. ومن رأى أنه قتل حية، فذلك يدل على تغلبه على عدو كان يتربص به خفية.\n\nويختلف التفسير كذلك بحسب لون الحية وحجمها، فالحية الصغيرة قد تدل على عدو ضعيف الأثر، والكبيرة على خطر أعظم.\n\nملحوظة: قبل تفسير رؤيا الحية، لا بد من السؤال عن الحالة الاجتماعية للرائي وبيئته، إذ يختلف التفسير باختلاف هذه العوامل.",
+    "date": "2026-08-02"
+  },
+  {
+    "id": "dove",
+    "title": "الحمامة في المنام",
+    "category": "الحيوانات",
+    "excerpt": "الحمامة رمز الطمأنينة والزوجة الصالحة في أغلب التفاسير، وقد تحمل معاني أخرى بحسب سياق الرؤيا.",
+    "content": "الحمامة في المنام تدل غالباً على المرأة الصالحة أو الزوجة، وقد تدل على السكينة والطمأنينة التي يفتقدها الرائي.\n\nفمن رأى حمامة تدخل بيته، فقد يدل ذلك على قدوم خير أو زوجة صالحة إن كان أعزباً. ومن رأى حمامة بيضاء تحلق فوقه، فذلك يدل على بشارة أو خبر سار قادم.\n\nأما إن رأى حمامة ميتة أو مريضة، فقد يدل ذلك على حزن يصيب أهل بيته أو فراق قريب.\n\nملحوظة: كما هو الحال مع سائر الرموز، لا يُفسَّر تفسيراً نهائياً دون معرفة الحالة الاجتماعية للرائي أولاً.",
+    "date": "2026-08-03"
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--parchment);
-    color:var(--ink);
-    font-family:'Tajawal',sans-serif;
-  }
-  a{color:inherit; text-decoration:none;}
-  h1,h2,h3{font-family:'Aref Ruqaa', serif; font-weight:700;}
-
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
-
-  /* NAV */
-  nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(14,59,46,0.96);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--gold);
-  }
-  .nav-inner{
-    max-width:1100px; margin:0 auto;
-    display:flex; align-items:center; justify-content:space-between;
-    padding:14px 24px;
-  }
-  .nav-logo{color:var(--gold-light); font-family:'Aref Ruqaa',serif; font-size:1.3rem;}
-  .back-link{
-    color:var(--parchment); font-size:0.95rem;
-    border:1px solid var(--gold); padding:8px 18px;
-    transition:background 0.2s ease;
-  }
-  .back-link:hover{background:rgba(198,154,62,0.15);}
-
-  /* HEADER */
-  .blog-header{
-    background:
-      linear-gradient(180deg, rgba(9,42,32,0.94), rgba(9,42,32,0.88)),
-      repeating-linear-gradient(45deg, rgba(198,154,62,0.04) 0 2px, transparent 2px 40px);
-    color:var(--parchment);
-    text-align:center;
-    padding:80px 20px 60px;
-  }
-  .blog-header .eyebrow{
-    letter-spacing:3px; font-size:0.85rem; color:var(--gold-light);
-    text-transform:uppercase; margin-bottom:14px;
-  }
-  .blog-header h1{
-    font-size:clamp(2rem, 5vw, 3.2rem);
-    color:var(--gold-light);
-  }
-  .blog-header p{
-    max-width:520px; margin:16px auto 0;
-    color:rgba(241,231,206,0.8); line-height:1.9;
-  }
-
-  /* MAIN */
-  main{max-width:900px; margin:0 auto; padding:60px 20px 100px;}
-
-  .filter-row{
-    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px;
-  }
-  .filter-chip{
-    border:1px solid var(--gold); padding:8px 20px;
-    font-size:0.9rem; cursor:pointer;
-    background:transparent; color:var(--emerald-deep); font-weight:500;
-    transition:background 0.2s ease, color 0.2s ease;
-    font-family:'Tajawal',sans-serif;
-  }
-  .filter-chip.active, .filter-chip:hover{
-    background:var(--emerald-deep); color:var(--gold-light);
-  }
-
-  .posts-grid{display:flex; flex-direction:column; gap:20px;}
-  .post-card{
-    background:#fff; border:1px solid rgba(198,154,62,0.35);
-    padding:0; overflow:hidden;
-    transition:box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-  .post-card:hover{box-shadow:0 12px 26px rgba(14,59,46,0.1); border-color:var(--gold);}
-  .post-card-head{
-    padding:26px 28px; cursor:pointer;
-    display:flex; justify-content:space-between; align-items:center; gap:16px;
-  }
-  .post-meta{display:flex; gap:10px; align-items:center; margin-bottom:8px;}
-  .post-category{
-    font-size:0.75rem; color:var(--maroon); font-weight:700;
-    text-transform:uppercase; letter-spacing:1px;
-  }
-  .post-date{font-size:0.78rem; color:#8a7a58;}
-  .post-card h3{font-size:1.3rem; color:var(--emerald-deep); margin-bottom:6px;}
-  .post-excerpt{font-size:0.92rem; color:#5a4d34; line-height:1.8;}
-  .post-toggle{
-    flex-shrink:0; width:34px; height:34px; border:1px solid var(--gold);
-    display:flex; align-items:center; justify-content:center;
-    color:var(--gold); font-size:1.2rem;
-    transition:transform 0.3s ease;
-  }
-  .post-card.open .post-toggle{transform:rotate(45deg);}
-
-  .post-body{
-    max-height:0; overflow:hidden;
-    transition:max-height 0.4s ease, padding 0.4s ease;
-    background:var(--parchment-deep);
-  }
-  .post-card.open .post-body{max-height:800px;}
-  .post-body-inner{
-    padding:6px 28px 28px;
-    font-size:0.98rem; line-height:2.1; color:#3a2f1e;
-    white-space:pre-line;
-  }
-
-  .empty-state{
-    text-align:center; padding:60px 20px; color:#8a7a58;
-  }
-
-  footer{
-    background:var(--emerald-deep); color:rgba(241,231,206,0.6);
-    text-align:center; padding:36px 20px; font-size:0.85rem;
-  }
-</style>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">عبده نجيم</div>
-    <a href="index.html" class="back-link">الرئيسية</a>
-  </div>
-</nav>
-
-<header class="blog-header">
-  <div class="eyebrow">مدونة تفسير الرؤى</div>
-  <h1>موسوعة أسرار الرؤى</h1>
-  <p>تفسيرات منشورة بشكل مستمر لرموز الأحلام على منهج ابن سيرين والنابلسي، تُحدَّث أولاً بأول.</p>
-</header>
-
-<main>
-  <div class="filter-row" id="filterRow"></div>
-  <div class="posts-grid" id="postsGrid"></div>
-  <div class="empty-state" id="emptyState" style="display:none;">لا توجد تفسيرات في هذا التصنيف حالياً.</div>
-</main>
-
-<footer>© 2026 عبده نجيم — جميع الحقوق محفوظة</footer>
-
-<script>
-  let allPosts = [];
-  let activeCategory = 'الكل';
-
-  async function loadPosts(){
-    try{
-      const res = await fetch('posts.json' + '?t=' + Date.now());
-      allPosts = await res.json();
-      allPosts.sort((a,b) => new Date(b.date) - new Date(a.date));
-      renderFilters();
-      renderPosts();
-    }catch(err){
-      document.getElementById('postsGrid').innerHTML =
-        '<div class="empty-state">تعذّر تحميل التفسيرات. تأكد من وجود ملف posts.json.</div>';
-    }
-  }
-
-  function renderFilters(){
-    const cats = ['الكل', ...new Set(allPosts.map(p => p.category))];
-    const row = document.getElementById('filterRow');
-    row.innerHTML = cats.map(c =>
-      `<button class="filter-chip ${c===activeCategory?'active':''}" data-cat="${c}">${c}</button>`
-    ).join('');
-    row.querySelectorAll('.filter-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        activeCategory = btn.dataset.cat;
-        renderFilters();
-        renderPosts();
-      });
-    });
-  }
-
-  function renderPosts(){
-    const grid = document.getElementById('postsGrid');
-    const empty = document.getElementById('emptyState');
-    const filtered = activeCategory === 'الكل'
-      ? allPosts
-      : allPosts.filter(p => p.category === activeCategory);
-
-    if(filtered.length === 0){
-      grid.innerHTML = '';
-      empty.style.display = 'block';
-      return;
-    }
-    empty.style.display = 'none';
-
-    grid.innerHTML = filtered.map(p => `
-      <article class="post-card" id="post-${p.id}">
-        <div class="post-card-head">
-          <div>
-            <div class="post-meta">
-              <span class="post-category">${p.category}</span>
-              <span class="post-date">${formatDate(p.date)}</span>
-            </div>
-            <h3>${p.title}</h3>
-            <p class="post-excerpt">${p.excerpt}</p>
-          </div>
-          <div class="post-toggle">+</div>
-        </div>
-        <div class="post-body"><div class="post-body-inner">${p.content}</div></div>
-      </article>
-    `).join('');
-
-    grid.querySelectorAll('.post-card').forEach(card => {
-      card.querySelector('.post-card-head').addEventListener('click', () => {
-        card.classList.toggle('open');
-      });
-    });
-  }
-
-  function formatDate(dateStr){
-    const d = new Date(dateStr);
-    return d.toLocaleDateString('ar-EG', { year:'numeric', month:'long', day:'numeric' });
-  }
-
-  loadPosts();
-</script>
-
-</body>
-</html>
+]
